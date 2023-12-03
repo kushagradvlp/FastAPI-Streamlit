@@ -27,4 +27,4 @@ if st.button("Detect Text"):
     else:
         st.warning("Please enter some text.")
 
-st.info("This app connects streamlit UI to locally hosted API.")
+st.info("This app connects streamlit UI to AWS hosted FastAPI using Ec2 and Elastic IP Address.")
