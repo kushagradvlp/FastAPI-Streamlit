@@ -9,13 +9,13 @@ user_text = st.text_area("Enter some text:")
 
 def detect_text(text):
     # Replace with your custom API endpoint
-    api_endpoint = "http://18.210.158.140:8000/" 
+    api_endpoint = "http://18.210.158.140:8000/analyse/sentiment" 
     payload = {"text": text}
     print(payload,flush=True)
     response = requests.post(api_endpoint, params=payload)
     
     if response.status_code == 200:
-        return response.json()["Name"]
+        return response.json()
     else:
         return "Text detection failed."
 
