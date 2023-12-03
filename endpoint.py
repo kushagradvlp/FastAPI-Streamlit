@@ -9,7 +9,7 @@ user_text = st.text_area("Enter some text:")
 
 def detect_text(text):
     # Replace with your custom API endpoint
-    api_endpoint = "http://127.0.0.1:8000/"
+    api_endpoint = "http://54.159.19.22:8000/"
     payload = {"text": text}
     print(payload,flush=True)
     response = requests.post(api_endpoint, params=payload)
